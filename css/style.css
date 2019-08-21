@@ -1,0 +1,402 @@
+/*****************
+    DEFAULTS
+****************/
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrap {
+    margin-bottom: 100px; 
+}
+
+.content {
+    flex: 1 0 auto;
+}
+  
+.hr-style  {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.form-control:focus {
+    border-color: #9c9c9c;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #3d3d3d;
+}
+
+/****************/
+
+
+
+
+
+
+/*****************
+    INTRODUCTION
+****************/
+
+.main-h1 {
+    font-size: 35px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.intro-style {
+    background-color: #f2f2f2;
+    padding-bottom: 70px;
+    padding-top: 70px;
+}
+
+.main-p{
+    margin-top: 25px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 28px;
+    margin-bottom: 25px;
+}
+
+.animation,
+.main-p,
+.my-head {
+    animation: fadein 1.5s;
+    -moz-animation: fadein 1.5s; /* Firefox */
+    -webkit-animation: fadein 1.5s; /* Safari and Chrome */
+    -o-animation: fadein 1.5s; /* Opera */
+}
+
+.my-head {
+    width: 155px;
+    height: 155px;
+    border-radius: 50%;
+}
+
+/****************/
+
+
+
+
+
+
+/*****************
+    LATEST PROJECTS
+****************/
+
+.my-work {
+    margin-top: 100px;
+}
+
+/****************/
+
+
+
+
+
+
+/*****************
+    WORK
+****************/
+
+.grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.grid img {
+    margin: 15px;
+}
+
+.grid-row  {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+.project-link {
+    margin-left: 1.5em;
+}
+
+.project-link-color {
+    color: #1abc9c;
+}
+
+/****************/
+
+
+
+
+
+
+
+/*****************
+    ABOOUT
+****************/
+
+.about-margin {
+    margin-top: 10em;
+    margin-bottom: 10em;
+}
+
+/****************/
+
+
+
+
+
+/*****************
+    NAV BAR
+****************/
+
+.return-home {
+    font-weight: bold;
+}
+
+.main-nav {
+    padding: 70px 0 70px 0;
+    background-color: #1abc9c;
+    border-bottom: 2px solid #16a085;
+}
+
+/****************/
+
+
+
+
+
+/*****************
+    FOOTER
+****************/
+
+.footer {
+    background-color: #2f2f2f;
+    flex-shrink: 0;
+}
+
+.footer-style {
+    background-color: #2f2f2f;
+    color: white;
+    
+}
+
+.footer-style a {
+    color: #1abc9c;
+}
+
+/****************/
+
+
+
+
+/*****************
+    BUTTONS
+****************/
+
+.btn-style a, 
+.btn-style a:visited {
+    text-decoration: none;
+    position: relative;
+    color: #1abc9c;
+}
+
+.btn-style a:after, 
+.btn-style a:visited:after {
+    content: '';
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    background: #1abc9c;
+    transition: 0.2s;
+}
+
+.btn-style a:hover:after, 
+.btn-style a:visited:hover:after {
+    width: 100%;
+}
+
+.btn-style a.block, 
+.btn-style a:visited.block {
+    display: block;
+    padding: 0.5em;
+}
+
+.btn-style a.block:hover, 
+.btn-style a:visited.block:hover {
+    background: #eee;
+}
+
+.btn-work:link,
+.btn-work:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: relative;
+}
+  
+.btn-work {
+    border: 1px #2f2f2f solid;
+    color: #2f2f2f;
+}
+  
+.btn-div {
+    margin-top: 50px;
+    margin-bottom: 8em;
+}
+  
+.btn-work:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,.2);
+    color: #2f2f2f;
+}
+  
+.btn-work:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+  
+.btn-work-white {
+    background-color: #fff;
+    color: #777;
+}
+  
+.btn-work::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: -1;
+    transition: all .4s;
+}
+  
+.btn-white::after {
+    background-color: #fff;
+}
+  
+.btn-work:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+  
+.btn-work-animated {
+    animation: moveInBottom 0.5s ease-out .75s;
+    animation-fill-mode: backwards;
+}
+
+.submit-style {
+    background-color: #1abc9c;
+    color: white;
+}
+
+.submit-style:hover {
+    background-color: #16a085;
+    color: white;
+}
+
+/****************/
+
+
+
+
+
+/*****************
+    KEYFRAMES
+****************/
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/****************/
+
+
+
+
+
+
+/*****************
+    MEDIA QUERIES
+****************/
+
+
+@media (min-width: 768px) {
+    .navbar-nav>li>a {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
+
+
+@media (max-width: 767.98px) {
+    .navbar-expand-md>.container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .work-image {
+        padding: 30px;
+    }
+}
+
+/****************/
