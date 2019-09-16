@@ -115,6 +115,10 @@ body {
     margin: 15px;
 }
 
+img {
+    object-fit: cover;
+}
+
 .grid-row  {
     display: flex;
     flex-direction: column;
